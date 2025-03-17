@@ -156,7 +156,7 @@ INSERT INTO Ubicacion_Persona (persona_id, lugar_id, desde, hasta) VALUES
 (1, 1, '13:00:00', '14:00:00'), -- Adrián en Reboot Academy (sospechoso)
 (2, 1, '13:00:00', '14:00:00'), -- Mustafa en Reboot Academy (sospechoso)
 (3, 1, '13:00:00', '14:00:00'), -- Simba en Reboot Academy (corregido, sospechoso)
-(4, 2, '13:00:00', '14:00:00'), -- Mufasa en SPAR Ripoche
+(4, 1, '13:00:00', '14:00:00'), -- Mufasa en Reboot Academy
 (5, 3, '13:00:00', '14:00:00'), -- Nala en Cafetería Lanzarote
 (6, 1, '13:00:00', '14:00:00'), -- Juana (profesora) en Reboot Academy
 (7, 4, '13:00:00', '13:30:00'), -- María (directora) en Compro Oro 1 (vendiendo anillo)
