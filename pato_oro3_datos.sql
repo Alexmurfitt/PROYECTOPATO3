@@ -149,15 +149,18 @@ CREATE TABLE Ubicacion_Persona (
   FOREIGN KEY (persona_id) REFERENCES Personas(persona_id),
   FOREIGN KEY (lugar_id) REFERENCES Lugares(lugar_id)
 );
-INSERT INTO Ubicacion_Persona VALUES
-(1,1,1,'13:00:00','14:00:00'),
-(2,2,1,'13:00:00','14:00:00'),
-(3,3,2,'13:15:00','14:00:00'),
-(4,4,2,'13:00:00','14:00:00'),
-(5,5,3,'13:00:00','14:00:00');
 
-
-
-
-
-
+-- Insertar TODAS las ubicaciones de cada persona
+INSERT INTO Ubicacion_Persona (persona_id, lugar_id, desde, hasta) VALUES
+(1,1,'13:00:00','14:00:00'), -- Reboot Academy (sospechoso)
+(2,1,'13:00:00','14:00:00'), -- Reboot Academy (sospechoso)
+(3,2,'13:15:00','14:00:00'), -- SPAR Ripoche
+(4,2,'13:00:00','14:00:00'), -- SPAR Ripoche
+(5,3,'13:00:00','14:00:00'), -- Cafeteria Lanzarote
+(6,1,'13:00:00','14:00:00'), -- Reboot Academy (profesora)
+(7,4,'13:00:00','13:30:00'), -- Compro Oro 1 (directora vendiendo anillo)
+(8,1,'12:00:00','14:00:00'), -- Reboot Academy (portero)
+(9,4,'12:30:00','13:30:00'), -- Compro Oro 1 (joyera)
+(10,5,'12:00:00','14:00:00'), -- Compro Oro 2 (dependiente)
+(11,5,'12:00:00','14:00:00'), -- Compro Oro 2 (joyero)
+(12,6,'12:00:00','14:00:00'); -- Compro Oro 3 (joyero)
