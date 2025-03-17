@@ -1,6 +1,6 @@
 # 🦆 Proyecto PATO ORO 3
 
-Bienvenido al **Proyecto PATO ORO 3**, un proyecto completo de investigación detectivesca, diseñado para resolver el misterioso robo del "Pato de Oro", una valiosa figura desaparecida de Reboot Academy.
+Bienvenido al **Proyecto PATO ORO 3**, un proyecto completo de investigación diseñado para resolver el misterioso robo del "Pato de Oro", una valiosa figura desaparecida de Reboot Academy.
 
 ---
 
