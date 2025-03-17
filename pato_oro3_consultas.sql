@@ -102,7 +102,7 @@ GROUP BY
 ORDER BY
     Numero_Ventas DESC;
 --====================0
--- Otra forma de realizar la última consulta:
+-- Consulta anterior simplificada teniendo en cuenta que ya se había descartado a varias personas con las primeras 5 consultas:
 SELECT 
     p.persona_id, 
     p.nombre, 
@@ -114,7 +114,6 @@ JOIN
     Detalle_Tienda dt ON p.persona_id = dt.persona_id
 WHERE 
     p.persona_id IN (
-        -- Ya filtramos antes: personas con mochila grande, presentes el día del robo, en el descanso, con la descripción física correcta.
         SELECT persona_id FROM Personas 
         WHERE altura = 'alto' 
         AND constitucion = 'fuerte' 
@@ -127,3 +126,4 @@ GROUP BY
 ORDER BY 
     Numero_Ventas DESC
 LIMIT 1;
+
