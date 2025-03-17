@@ -124,6 +124,4 @@ WHERE
 GROUP BY 
     p.persona_id
 ORDER BY 
-    Numero_Ventas DESC
-LIMIT 1;
-
+    Numero_Ventas DESC;
