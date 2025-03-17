@@ -107,7 +107,7 @@ INSERT INTO Declaraciones (declaraciones_id, persona_id, declaracion) VALUES
 (1, 1, 'Me quedé todo el día en clases.'),
 (2, 2, 'Estuve todo el rato en la academia y creo recordar que alguien más estuvo por ahí.'),
 (3, 3, 'Estuve solo un rato en la academia y luego fui al Spar.'),
-(4, 4, 'Fui al Spar y me encontré con un compañero.'),
+(4, 4, 'Estuve en clases.'),
 (5, 5, 'Fui a la cafetería a merendar.'),
 (6, 6, 'No noté nada raro. Acompañé a Matías que se encontraba muy mal y luego volví a clase.'),
 (7, 7, 'Fui a la joyería a vender mi anillo de boda junto al resto de mis joyas.'),
