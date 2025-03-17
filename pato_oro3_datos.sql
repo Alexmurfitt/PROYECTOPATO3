@@ -152,17 +152,17 @@ CREATE TABLE Ubicacion_Persona (
   FOREIGN KEY (lugar_id) REFERENCES Lugares(lugar_id)
 );
 
--- Insertar TODAS las ubicaciones de cada persona
 INSERT INTO Ubicacion_Persona (persona_id, lugar_id, desde, hasta) VALUES
-(1,1,'13:00:00','14:00:00'), -- Reboot Academy (sospechoso)
-(2,1,'13:00:00','14:00:00'), -- Reboot Academy (sospechoso)
-(3,2,'13:15:00','14:00:00'), -- SPAR Ripoche
-(4,2,'13:00:00','14:00:00'), -- SPAR Ripoche
-(5,3,'13:00:00','14:00:00'), -- Cafeteria Lanzarote
-(6,1,'13:00:00','14:00:00'), -- Reboot Academy (profesora)
-(7,4,'13:00:00','13:30:00'), -- Compro Oro 1 (directora vendiendo anillo)
-(8,1,'12:00:00','14:00:00'), -- Reboot Academy (portero)
-(9,4,'12:30:00','13:30:00'), -- Compro Oro 1 (joyera)
-(10,5,'12:00:00','14:00:00'), -- Compro Oro 2 (dependiente)
-(11,5,'12:00:00','14:00:00'), -- Compro Oro 2 (joyero)
-(12,6,'12:00:00','14:00:00'); -- Compro Oro 3 (joyero)
+(1, 1, '13:00:00', '14:00:00'), -- Adrián en Reboot Academy (sospechoso)
+(2, 1, '13:00:00', '14:00:00'), -- Mustafa en Reboot Academy (sospechoso)
+(3, 1, '13:00:00', '14:00:00'), -- Simba en Reboot Academy (corregido, sospechoso)
+(4, 2, '13:00:00', '14:00:00'), -- Mufasa en SPAR Ripoche
+(5, 3, '13:00:00', '14:00:00'), -- Nala en Cafetería Lanzarote
+(6, 1, '13:00:00', '14:00:00'), -- Juana (profesora) en Reboot Academy
+(7, 4, '13:00:00', '13:30:00'), -- María (directora) en Compro Oro 1 (vendiendo anillo)
+(8, 1, '12:00:00', '14:00:00'), -- Carlos (portero) en Reboot Academy
+(9, 4, '12:30:00', '13:30:00'), -- Ana (joyera) en Compro Oro 1
+(10, 5, '12:00:00', '14:00:00'), -- David (dependiente) en Compro Oro 2
+(11, 5, '12:00:00', '14:00:00'), -- Jose (joyero) en Compro Oro 2
+(12, 6, '12:00:00', '14:00:00'); -- George (joyero) en Compro Oro 3
+
