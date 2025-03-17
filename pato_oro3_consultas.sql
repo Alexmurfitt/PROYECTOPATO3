@@ -127,30 +127,3 @@ GROUP BY
 ORDER BY 
     Numero_Ventas DESC
 LIMIT 1;
-
---==================================0
---Una forma aún mas simplificada:
-SELECT 
-    p.persona_id, 
-    p.nombre, 
-    p.apellidos, 
-    COUNT(dt.tienda_id) AS Numero_Ventas
-FROM 
-    Personas p
-JOIN 
-    Detalle_Tienda dt ON p.persona_id = dt.persona_id
-WHERE 
-    p.persona_id IN (
-        SELECT persona_id FROM Personas 
-        WHERE altura = 'alto' 
-        AND constitucion = 'fuerte' 
-        AND inventario_id IN (SELECT persona_id FROM Inventario WHERE mochila_descripcion LIKE '%grande%')
-        AND persona_id IN (SELECT persona_id FROM Registro_Reboot WHERE fecha = '2025-03-12')
-        AND persona_id IN (SELECT persona_id FROM Ubicacion_Persona WHERE desde BETWEEN '13:00:00' AND '14:00:00')
-    )
-GROUP BY 
-    p.persona_id
-ORDER BY 
-    Numero_Ventas DESC
-LIMIT 1;
-
